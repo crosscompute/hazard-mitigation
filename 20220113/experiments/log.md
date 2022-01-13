@@ -1,0 +1,38 @@
+# Log
+
+## Thursday 20220113-0830 - 20220113-0845: 15 minutes
+
+    + Review google places api
+    + Use google places api to find hospitals in Mayfield, KY
+    + See if specifying a locationbias will give multiple results
+
+Specifying a locationbias did not give multiple results.
+
+https://stackoverflow.com/questions/52273709/find-place-requests-returns-only-one-result
+
+It looks like we need to use the text search API.
+
+    + Use google places text search API to get multiple results
+
+```
+'types': ['hospital', 'health', 'point_of_interest', 'establishment']
+```
+
+I think Google might automatically filter the results.
+
+    _ Filter results so that we only get large hospitals
+
+## Thursday 20220113-0930 - 20220113-0945: 15 minutes
+
+Now let's productionize the code and package it into a tool.
+
+I think what we will be writing is a thin wrapper around the google places text search API.
+
+    + Productionize script
+    + Write configuration file
+    + Test with self contained server
+    + Transform script into a CrossCompute tool
+
+# Schedule
+
+# Tasks

@@ -42,17 +42,11 @@ output:
       view: map-mapbox
       path: geometries.geojson
       configuration:
-        style: mapbox://styles/mapbox/light-v10
+        style: mapbox://styles/mapbox/dark-v10
         layers:
           - type: circle
             paint:
               circle-color: yellow
-        path: map.json
-    - id: screengrid
-      view: map-deck-screengrid
-      path: geometries.json
-      configuration:
-        style: mapbox://styles/mapbox/dark-v10
         path: map.json
 
   # output templates

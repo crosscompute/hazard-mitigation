@@ -33,10 +33,10 @@ output:
   #   relative to the output folder
   variables:
     - id: raw
-      view: text
+      view: link
       path: raw.json
     - id: places
-      view: text
+      view: link
       path: places.csv
     - id: map
       view: map-mapbox

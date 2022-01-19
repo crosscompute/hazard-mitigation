@@ -3,6 +3,7 @@
 We locate critical medical infrastructure in Mayfield, Kentucky, USA and present a tool for quickly gathering building location data.
 
 ## Purpose
+
 On Friday, December 10, 2021, a tornado hit Mayfield, Kentucky and caused widespread outages. A microgrid can keep critical buildings such as hospitals operational during an emergency. In this report, we will have an initial look at the medical infrastructure of Mayfield, Kentucky in order to set the stage for a microgrid feasibility study.
 
 ## Method
@@ -15,27 +16,27 @@ First, we searched for medical buildings manually using Google Maps. Then, we au
 
 ### Places Found
 
-We found one medical center serving Mayfield, Kentucky, which in 2021 had a census count of 9,729 people. [The map shows the hospital is located in the northwest corner of the town](https://crosscompute.net/a/find-places/b/hospitals-in-mayfield-ky-usa/o).
+We found 9 medical locations serving Mayfield, Kentucky, of which 8 seem to be unique buildings. In 2021, the town had a census count of 9,729 people.
 
-![Screenshot from 2022-01-18 14-56-44|690x439](images/Screenshot from 2022-01-18 14-56-44.png)
+{ medical-infrastructure-mayfield-kentucky-usa }
 
 ### Find Places
 
 We automated the search to make future searches easier. You can access the tool at https://crosscompute.net/a/find-places.
 
-![Screenshot from 2022-01-18 14-41-58|543x255](images/Screenshot from 2022-01-18 14-41-58.png)
+{ find-places-automation-screenshot }
 
 Two pre-computed batches demonstrate use of the tool.
 
-![Screenshot from 2022-01-18 15-07-36|532x122](images/Screenshot from 2022-01-18 15-07-36.png)
+{ find-places-input-screenshot }
 
 The input form takes a description and a location. Description should be a building type, such as hospitals or fire stations.
 
-![Screenshot from 2022-01-18 14-42-25|554x500](images/Screenshot from 2022-01-18 14-42-25.png)
+{ find-places-output-screenshot }
 
 The output report shows an interactive map and and makes available the CSV and raw JSON for download.
 
-![Screenshot from 2022-01-18 15-11-27|690x97](Screenshot from 2022-01-18 15-11-27.png)
+{ find-places-output-csv-screenshot }
 
 The tool uses the CrossCompute framework to wrap a Jupyter Notebook that calls the [Google Places API Text Search](https://developers.google.com/maps/documentation/places/web-service/search-text). Code is available at https://github.com/crosscompute/find-places.
 

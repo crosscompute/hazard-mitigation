@@ -1,0 +1,8 @@
+---
+# version of crosscompute
+crosscompute: 0.9.1
+
+# imports configuration
+# - path to the configuration file that you want to import
+imports:
+  - path: reports/20220118-locating-hospitals-in-mayfield-kentucky-usa/automate.yml
